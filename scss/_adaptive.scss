@@ -1,0 +1,94 @@
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        width: 1200px;
+    }
+    #angleT {
+        display: none;
+    }
+    #angleB {
+        display: none;
+    }
+    .bio__JaneBio {
+        width: 240px;
+        margin-bottom: 40px;
+    }
+    p {
+         @include size (440px, 440px);
+         margin-top: 10px;
+         br {
+             display: none;
+         }
+    }
+    .form {
+        width: 1200px;
+        .nameNgender {
+            p {
+                margin-top: 0px;
+            }
+        }
+        .locationNbirth {
+            p {
+                margin-top: 0px;
+            }
+        }
+        .upload {
+            @include positionLeft(430px, 65px);
+            .proof {
+                margin-top: 0px;
+        }
+        }
+    }
+    #slider {
+        p {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header {
+        width: 992px;
+    }
+    .bio {
+        .bio__JaneBio {
+            width: 240px; 
+        }
+        h2 {
+            display: none;
+        }
+        p {
+            display: none;
+        }
+    }
+    .form {
+        width: 992px;
+        .upload {
+
+            @include positionLeft(430px, 65px);
+            .proof {
+                @include positionLeft(27px, 16px);
+               
+            }
+            .fileBtn {
+                @include positionLeft(24px, 390px);
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 768px;
+    }
+    .bio {
+       display: none;
+    }
+    .form {
+        width: 768px;
+    }
+}
+
+
+

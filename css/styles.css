@@ -1,0 +1,753 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #9F9F9F;
+}
+
+input::-moz-placeholder {
+  color: #9F9F9F;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+
+  #angleT {
+    display: none;
+  }
+
+  #angleB {
+    display: none;
+  }
+
+  .bio__JaneBio {
+    width: 240px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    width: 440px;
+    height: 440px;
+    margin-top: 10px;
+  }
+  p br {
+    display: none;
+  }
+
+  .form {
+    width: 1200px;
+  }
+  .form .nameNgender p {
+    margin-top: 0px;
+  }
+  .form .locationNbirth p {
+    margin-top: 0px;
+  }
+  .form .upload {
+    position: absolute;
+    top: 430px;
+    left: 65px;
+  }
+  .form .upload .proof {
+    margin-top: 0px;
+  }
+
+  #slider p {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header {
+    width: 992px;
+  }
+
+  .bio .bio__JaneBio {
+    width: 240px;
+  }
+  .bio h2 {
+    display: none;
+  }
+  .bio p {
+    display: none;
+  }
+
+  .form {
+    width: 992px;
+  }
+  .form .upload {
+    position: absolute;
+    top: 430px;
+    left: 65px;
+  }
+  .form .upload .proof {
+    position: absolute;
+    top: 27px;
+    left: 16px;
+  }
+  .form .upload .fileBtn {
+    position: absolute;
+    top: 24px;
+    left: 390px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 768px;
+  }
+
+  .bio {
+    display: none;
+  }
+
+  .form {
+    width: 768px;
+  }
+}
+.header {
+  width: 1440px;
+  height: 96px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #F8F3FF;
+}
+.header .logo {
+  width: 116px;
+  height: 45px;
+  position: absolute;
+  top: 26px;
+  left: 64px;
+}
+.header .nav {
+  position: absolute;
+  top: 38px;
+  right: 176px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+}
+.header .nav li {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.header .nav li a {
+  color: #8E43ED;
+}
+.header .nav li a:visited {
+  color: #8E43ED;
+}
+
+.main {
+  width: 1440px;
+  height: 800px;
+  position: absolute;
+  top: 96px;
+  left: 0px;
+}
+.main #angleT {
+  width: 337px;
+  height: 259px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.main #angleB {
+  width: 337px;
+  height: 259px;
+  position: absolute;
+  top: 541px;
+  right: 0;
+}
+.main #photo {
+  width: 528px;
+  height: 600px;
+  position: absolute;
+  top: 100px;
+  left: 64px;
+}
+.main #squares {
+  width: 170px;
+  height: 250px;
+  position: absolute;
+  top: 505px;
+  left: 0px;
+}
+.main #squaresMob {
+  display: none;
+}
+.main .bio {
+  width: 640px;
+  height: 512px;
+  position: absolute;
+  top: 144px;
+  left: 624px;
+}
+.main .bio h1 {
+  color: #303030;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 52px;
+  margin-bottom: 24px;
+}
+.main .bio__JaneBio {
+  display: flex;
+}
+.main .bio__JaneBio .color {
+  color: #AA7ECD;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-right: 38px;
+}
+.main .bio__JaneBio .answer {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-right: 32px;
+}
+.main .bio .about h2 {
+  color: #303030;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 36px;
+  margin-top: 52px;
+  margin-bottom: 24px;
+}
+.main .bio .about p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.form {
+  width: 1440px;
+  height: 750px;
+  position: absolute;
+  top: 896px;
+  left: 0px;
+  background-color: #F8F3FF;
+  z-index: -2;
+}
+.form #squares1 {
+  position: absolute;
+  top: 47px;
+  right: 0;
+}
+.form #squares2 {
+  position: absolute;
+  top: 71.5px;
+  left: 0;
+  z-index: -3;
+}
+.form #squaresMob1 {
+  display: none;
+}
+.form .info #btn {
+  width: 212px;
+  height: 56px;
+  position: absolute;
+  top: 646px;
+  left: 64px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #DED9E4;
+  border-radius: 12px;
+  border: none;
+}
+.form .info p {
+  width: 304px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #303030;
+}
+.form .info .name {
+  width: 304px;
+  height: 56px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #FFFFFF;
+  border: 1px solid #D9BBFF;
+  border-radius: 12px;
+  padding: 11.69px;
+  outline: none;
+  color: #303030;
+}
+.form .info .name:focus {
+  border: 1px solid #8E43ED;
+}
+.form .info .about {
+  width: 457px;
+  height: 72px;
+  position: absolute;
+  top: 56px;
+  left: 64px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 72px;
+  color: #303030;
+}
+.form .info .nameNgender .yourName {
+  position: absolute;
+  top: 168px;
+  left: 64px;
+  width: 304px;
+  height: 75px;
+}
+.form .info .nameNgender .genderInfo {
+  position: absolute;
+  top: 168px;
+  left: 400px;
+  width: 304px;
+  height: 75px;
+}
+.form .info .nameNgender .genderInfo .gender {
+  width: 304px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background: url("../images/arrows/select.png") no-repeat right #FFFFFF;
+  background-position-x: calc(100% - 15px);
+  border-radius: 12px;
+  color: #9F9F9F;
+  appearance: none;
+}
+.form .info .nameNgender .genderInfo .gender option {
+  color: #303030;
+}
+.form .info .locationNbirth .country {
+  position: absolute;
+  top: 318px;
+  left: 64px;
+}
+.form .info .locationNbirth .city {
+  position: absolute;
+  top: 318px;
+  left: 400px;
+}
+.form .info .locationNbirth .dateBirth {
+  position: absolute;
+  top: 318px;
+  left: 736px;
+}
+.form .info .upload {
+  width: 976px;
+  height: 104px;
+  position: absolute;
+  top: 430px;
+  right: 400px;
+  background: #FFFFFF;
+  border: 1px dashed #D9BBFF;
+  border-radius: 12px;
+  margin-top: 35px;
+}
+.form .info .upload .fileBtn {
+  position: absolute;
+  top: 24px;
+  right: 150px;
+  width: 211px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  background: #FFFFFF;
+  border: 1px solid #8E43ED;
+  border-radius: 12px;
+  color: #8E43ED;
+}
+.form .info .upload .fileBtn:hover {
+  background: #FAF8FE;
+}
+.form .info .upload .fileBtn:active {
+  background: #F0E5FE;
+}
+.form .info .upload .proof {
+  position: absolute;
+  top: 40px;
+  right: 320px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #9993BD;
+  width: 418px;
+}
+.form .info .upload #getFile {
+  display: none;
+}
+
+#slider {
+  position: absolute;
+  top: 1646px;
+  left: 64px;
+  width: 1440px;
+  height: 647px;
+}
+#slider .dots {
+  position: absolute;
+  top: 547px;
+  left: 620px;
+}
+#slider .dots .dot {
+  margin-right: 12px;
+}
+#slider .carousel {
+  overflow: hidden;
+  width: 1312px;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+}
+#slider .carousel__item {
+  display: none;
+}
+#slider .carousel__item .carousel__item--hidden {
+  display: none;
+}
+#slider .carousel__item p {
+  position: absolute;
+  top: 285px;
+  left: 366px;
+  width: 580px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#slider .carousel__item img {
+  border-radius: 32px;
+  height: auto;
+  width: 1312px;
+}
+#slider .carousel__item .slideText {
+  position: absolute;
+  top: 197px;
+  left: 422px;
+  width: 469px;
+  height: 72px;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 72px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#slider .carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+#slider .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#slider .carousel__actions button {
+  border: 0;
+  cursor: pointer;
+}
+#slider .carousel__actions #carousel__button--prev {
+  margin-left: 32px;
+  background: none;
+}
+#slider .carousel__actions #carousel__button--next {
+  margin-right: 32px;
+  background: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    width: 375px;
+    height: 64px;
+  }
+  .header .logo {
+    position: absolute;
+    top: 17px;
+    left: 149px;
+    width: 78px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .nav {
+    display: none;
+  }
+
+  .main {
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    width: 375px;
+    height: 2600px;
+  }
+  .main #photo {
+    position: absolute;
+    top: 24px;
+    left: 14px;
+    width: 348px;
+    height: 396px;
+  }
+  .main #squaresMob {
+    width: 79px;
+    height: 116px;
+    position: absolute;
+    top: 328px;
+    right: 16px;
+    display: initial;
+  }
+  .main #squares {
+    display: none;
+  }
+  .main #angleT {
+    display: none;
+  }
+  .main #angleB {
+    display: none;
+  }
+  .main .bio {
+    position: absolute;
+    top: 450px;
+    left: 14px;
+    width: 348px;
+    height: 104px;
+    display: initial;
+  }
+  .main .bio h1 {
+    color: #303030;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
+  .main .bio__JaneBio {
+    display: flex;
+    position: absolute;
+    top: 84px;
+    left: 0px;
+  }
+  .main .bio__JaneBio .color {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    width: 94px;
+    height: 18px;
+    margin-right: 25px;
+  }
+  .main .bio__JaneBio .answer {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .main .bio .about h2 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 106px;
+    height: 24px;
+    display: initial;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+  }
+  .main .bio .about p {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    width: 348px;
+    height: 286px;
+    display: initial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .main .bio .about p br {
+    display: initial;
+  }
+
+  .form {
+    position: absolute;
+    top: 1100px;
+    left: 0px;
+    width: 375px;
+    height: 1037px;
+  }
+  .form #squares1 {
+    display: none;
+  }
+  .form #squares2 {
+    display: none;
+  }
+  .form #squaresMob1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: initial;
+  }
+  .form .info #btn {
+    width: 348px;
+    height: 56px;
+    position: absolute;
+    top: 933px;
+    left: 14px;
+    background: #8E43ED;
+  }
+  .form .info .about {
+    width: 348px;
+    height: 82px;
+    position: absolute;
+    top: 40px;
+    left: 14px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 41px;
+    color: #303030;
+  }
+  .form .info .nameNgender .yourName {
+    width: 348px;
+    height: 75px;
+    position: absolute;
+    top: 162px;
+    left: 14px;
+  }
+  .form .info .nameNgender .yourName .name {
+    width: 348px;
+    height: 56px;
+  }
+  .form .info .nameNgender .genderInfo {
+    width: 348px;
+    height: 75px;
+    position: absolute;
+    top: 285px;
+    left: 14px;
+  }
+  .form .info .nameNgender .genderInfo .gender {
+    width: 348px;
+    height: 56px;
+  }
+  .form .info .locationNbirth .name {
+    width: 348px;
+    height: 56px;
+  }
+  .form .info .locationNbirth .country {
+    position: absolute;
+    top: 408px;
+    left: 14px;
+  }
+  .form .info .locationNbirth .city {
+    display: none;
+  }
+  .form .info .locationNbirth .dateBirth {
+    position: absolute;
+    top: 531px;
+    left: 14px;
+  }
+  .form .info .upload {
+    width: 348px;
+    height: 175px;
+    position: absolute;
+    top: 624px;
+    left: 14px;
+  }
+  .form .info .upload .proof {
+    width: 212px;
+    height: 48px;
+    position: absolute;
+    top: 27px;
+    left: 68px;
+    text-align: center;
+  }
+  .form .info .upload .fileBtn {
+    width: 212px;
+    height: 56px;
+    position: absolute;
+    top: 91px;
+    left: 68px;
+  }
+
+  #slider {
+    width: 346px;
+    height: 538px;
+    position: absolute;
+    top: 2097px;
+    left: 14px;
+  }
+  #slider .dots {
+    position: absolute;
+    top: 524px;
+    left: 140px;
+  }
+  #slider .carousel {
+    width: 346px;
+    height: 535px;
+  }
+  #slider .carousel .carousel__item img {
+    width: 346px;
+    height: 535px;
+  }
+  #slider .carousel .carousel__item .slideText {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    width: 254px;
+    height: 96px;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+  }
+  #slider .carousel .carousel__item p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 254px;
+    height: 96px;
+    position: absolute;
+    top: 282px;
+    left: 45px;
+  }
+  #slider .carousel .carousel__actions .left {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+  }
+  #slider .carousel .carousel__actions .right {
+    position: absolute;
+    top: 190px;
+    left: 292px;
+  }
+}

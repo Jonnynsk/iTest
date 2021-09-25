@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>iLink</title>
+</head>
+
+<body>
+
+    <header class='header'>
+        <div class='logo'>
+            <a href="#"><img src='images/logo.png' alt="logo" /></a>
+        </div>
+        <nav>
+            <ul class='nav'>
+                <li><a href="#photo">Jane Doe</a></li>
+                <li><a href="#tell">Tell us about yourself</a></li>
+                <li><a href="#slider">Slider</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class='main'>
+        <img src="images/angles/angleTop.png" id='angleT' alt="">
+        <img src="images/angles/angleBottom.png" id='angleB' alt="">
+        <img src="images/photo.png" id='photo' alt="photo">
+        <img src="images/squares/squares.png" id='squares' alt="">
+        <img src="images/squares/squaresMob.png" id='squaresMob' alt="">
+        <div class='bio'>
+            <h1>Jane Doe</h1>
+            <div class='bio__JaneBio'>
+                <div>
+                    <div class='color'>Date of birth</div>
+                    <div class='answer'>21.04.2001</div>
+                </div>
+                <div>
+                    <div class='color'>Gender</div>
+                    <div class='answer'>Female</div>
+                </div>
+                <div>
+                    <div class='color'>Country</div>
+                    <div class='answer'>Corea</div>
+                </div>
+            </div>
+            <div class="about">
+                <h2>About me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section class='form'>
+        <img src="images/squares/squares1.png" id='squares1' alt="">
+        <img src="images/squares/squares2.png" id='squares2' alt="">
+        <img src="images/squares/squaresMob1.png" id='squaresMob1' alt="">
+        <form class='info'>
+            <h2 class='about' id='tell'>Tell us about yourself</h2>
+            <div class='nameNgender'>
+                <div class='yourName'>
+                    <label for="names">
+                        <p>Your name</p>
+                    </label>
+                    <input class="name inp field" id='names' type='text' placeholder="Tell us your name" />
+                </div>
+                <div class='genderInfo'>
+                    <label for="genders">
+                        <p>Your gender</p>
+                    </label>
+                    <select class='name gender field' id='genders'
+                        onchange="document.getElementById('gender').style.color = 'black'">
+                        <option value="" selected hidden>Chose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class='locationNbirth'>
+                <div class='country'>
+                    <label for="countries">
+                        <p>Your country</p>
+                    </label>
+                    <input class='name inp field' id='countries' type='text' placeholder="Where are you from?" />
+                </div>
+                <div class='city'>
+                    <label for="cities">
+                        <p>Your city</p>
+                    </label>
+                    <input class='name inp  field' id='cities' type='text' placeholder="Your native city" />
+                </div>
+                <div class='dateBirth'>
+                    <label for="birth">
+                        <p>Your date of birth</p>
+                    </label>
+                    <input class='name inp  field' id='birth' type='text' placeholder="dd.mm.yyyy" />
+                </div>
+            </div>
+            <div class='upload'>
+                <input type='file' id='getFile' multiple accept=".png, .jpg" />
+                <button class='fileBtn' onclick="document.getElementById('getFile').click()">Add document</button>
+                <p class='proof'>Proof your identity with some documents</p>
+            </div>
+            <input type='submit' id='btn' class="validateBtn" value="Send info" />
+        </form>
+    </section>
+
+    <section id='slider'>
+        <div class='carousel'>
+            <div class='carousel__item carousel__item--visible'>
+                <div class='slideText'>Slide this photo</div>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur</p>
+                <picture>
+                    <source srcset='./images/slider/slideMob.png' media="(max-width: 480px)">
+                    <source srcset="./images/slider/slide.png">
+                    <img srcset='images/slider/slide.png' id='slide' />
+                </picture>
+            </div>
+            <div class='carousel__item'>
+                <div class='slideText'>One more time</div>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur</p>
+                <picture>
+                    <source srcset='./images/slider/slideMob1.png' media="(max-width: 480px)">
+                    <source srcset="./images/slider/slide1.png">
+                    <img srcset='images/slider/slide1.png' id='slide' />
+                </picture>
+            </div>
+            <div class='carousel__item'>
+                <div class='slideText'>And last one</div>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur</p>
+                <picture>
+                    <source srcset='./images/slider/slideMob2.png' media="(max-width: 480px)">
+                    <source srcset="./images/slider/slide2.png">
+                    <img srcset='images/slider/slide2.png' id='slide' />
+                </picture>
+            </div>
+            <div class='carousel__actions'>
+                <button id='carousel__button--prev' class='left' aria-label='Previous slide'><img
+                        src='images/arrows/prev.png' /></button>
+                <button id='carousel__button--next' class='right' aria-label='Next slide'><img
+                        src='images/arrows/next.png' /></button>
+            </div>
+        </div>
+        <div class='dots'>
+            <span class='dot active'><img src="images/dots/dotActive.png" alt=""></span>
+            <span class='dot'><img src="images/dots/dot.png" alt=""></span>
+            <span class='dot'><img src="images/dots/dot.png" alt=""></span>
+        </div>
+    </section>
+
+    <script src='js/app.js'></script>
+</body>
+
+</html>

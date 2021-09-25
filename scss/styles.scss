@@ -1,0 +1,485 @@
+@import 'general';
+@import 'adaptive';
+
+// header styles
+
+.header {
+    @include size (1440px, 96px);
+    @include positionLeft(0, 0);
+    background: $background;
+    .logo {
+        @include size (116px, 45px);
+        @include positionLeft(26px, 64px);
+    }
+    .nav {
+        @include positionRight(38px, 176px);
+        @include font(16px, 500, 20px);
+        display: flex;
+        li {
+            margin-left: 16px;
+            margin-right: 16px;
+            a {
+                color: $primary;
+                &:visited {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+// main styles
+
+.main {
+    @include size (1440px, 800px);
+    @include positionLeft(96px, 0px);
+    
+    #angleT {
+        @include size (337px, 259px);
+        @include positionLeft(0px, 0px);
+        
+    }
+    #angleB {
+        @include size (337px, 259px);
+        @include positionRight(541px, 0);
+    }
+    #photo {
+        @include size (528px, 600px);
+        @include positionLeft(100px, 64px);
+    }
+    #squares {
+        @include size (170px, 250px);
+        @include positionLeft(505px, 0px);
+    }
+    #squaresMob {
+        display: none;
+    }
+    .bio {
+        @include size (640px, 512px);
+        @include positionLeft(144px, 624px);
+        h1 {
+            color: $main-text;
+            @include font(56px, 800, 52px);
+            margin-bottom: 24px;
+        }
+        &__JaneBio {
+            display: flex;
+            .color {
+                color: #AA7ECD;
+                @include font(16px, 700, 21px);
+                margin-right: 38px;
+               
+            }
+            .answer {
+                color: $main-text;
+                @include font(16px, 500, 21px);
+                margin-right: 32px;
+            }
+        }
+        .about {
+            h2 {
+                color: $main-text;
+                @include font(27px, 800, 36px);
+                margin-top: 52px;
+                margin-bottom: 24px;
+            }
+            p {
+                @include font(18px, 400, 32px);
+            }
+        }
+       
+    }
+}
+
+// form styles
+
+.form {
+    @include size(1440px, 750px);
+    @include positionLeft(896px, 0px);
+    background-color: $background;
+    z-index: -2;
+    #squares1 {
+        @include positionRight(47px, 0);
+    }
+    #squares2 {
+        @include positionLeft(71.5px, 0);
+        z-index: -3;
+    }
+    #squaresMob1 {
+        display: none;
+    }
+    .info {
+        #btn {
+            @include size (212px, 56px);
+            @include positionLeft(646px, 64px);
+            @include font(16px, 500, 24px);
+            color: $white;
+            background: #DED9E4;
+            border-radius: $btn-radius;
+            border: none;
+        }
+        p {
+            @include size (304px, 19px);
+            @include font(14px, 600, 19px);
+            color: $main-text;
+        }
+        .name {
+            @include size (304px, 56px);
+            @include positionLeft(28px, 0px);
+            @include font(16px, 400, 24px);
+            background: $white;
+            border: 1px solid $secondary;
+            border-radius: $btn-radius;
+            padding: 11.69px;
+            outline:none;
+            color: $main-text;
+            &:focus {
+            border: 1px solid $primary;
+    }
+}
+        .about {
+            @include size(457px, 72px);
+            @include positionLeft(56px, 64px);
+            @include font(40px, 800, 72px);
+            color: $main-text;
+        }
+        .nameNgender {
+            .yourName {
+                @include positionLeft(168px, 64px);
+                @include size(304px, 75px);
+            }
+            .genderInfo {
+                @include positionLeft(168px, 400px);
+                @include size(304px, 75px);
+                .gender {
+                    @include size (304px, 56px);
+                    @include font(16px, 400, 24px);
+                    background: url('../images/arrows/select.png') no-repeat right $white;
+                    background-position-x: calc(100% - 15px);
+                    border-radius: $btn-radius;
+                    color: $untouched;
+                    appearance: none;
+                    option {
+                        color: $main-text;
+                    }
+                }
+            }
+    }
+        .locationNbirth {
+            .country {
+                @include positionLeft(318px, 64px);
+            }
+            .city {
+                @include positionLeft(318px, 400px);
+            }
+            .dateBirth {
+                @include positionLeft(318px, 736px);
+            }
+        }
+        .upload {
+            @include size (976px, 104px);
+            @include positionRight(430px, 400px);
+            background: $white;
+            border: 1px dashed #D9BBFF;
+            border-radius: $btn-radius;
+            margin-top: 35px;
+            .fileBtn {
+                @include positionRight(24px, 150px);
+                @include size (211px, 56px);
+                @include font(16px, 500, 24px);
+                background: $white;
+                border: 1px solid $primary;
+                border-radius: $btn-radius;
+                color: $primary;
+                &:hover {
+                    background: #FAF8FE;
+                }
+                &:active {
+                    background: #F0E5FE;
+                }
+            }
+            .proof {
+                @include positionRight(40px, 320px);
+                @include font(16px, 500, 24px);
+                letter-spacing: 0.03em;
+                color: #9993BD;
+                width: 418px;
+            }
+            #getFile {
+                display: none;
+            }
+        }
+
+}
+}
+
+// slider styles
+
+#slider {
+    @include positionLeft(1646px, 64px);
+    @include size (1440px, 647px);
+    .dots {
+        @include positionLeft(547px, 620px);
+        .dot {
+            margin-right: 12px;
+        }
+    }
+    .carousel {
+        overflow: hidden;
+        width: 1312px;
+        @include positionLeft(56px, 0px);
+        &__item  {
+            display: none;
+            .carousel__item--hidden {
+                display: none;
+            }
+           p {
+            @include positionLeft(285px, 366px);
+            @include size (580px, 64px);
+            @include font(18px, 500, 32px);
+            text-align: center;
+            color: $white;
+           }
+           img {
+               border-radius: $img-radius;
+               height: auto;
+               width: 1312px;
+           }
+           .slideText {
+            @include positionLeft(197px, 422px);
+            @include size (469px, 72px);
+            @include font(56px, 800, 72px);
+            text-align: center;
+            color: $white;
+           }
+        }
+        .carousel__item--visible {
+            display: block;
+            animation: fadeVisibility 0.5s;
+            @keyframes fadeVisibility {
+                0% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                    transform: opacity linear;
+                }
+            }
+        }
+        &__actions {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            button {
+                border: 0;
+                cursor: pointer;
+            }
+            #carousel__button--prev {
+                margin-left: 32px;
+                background: none;
+            }
+            #carousel__button--next {
+                margin-right: 32px;
+                background: none;
+            }
+        }
+    }
+}
+
+// mobile styles
+
+@media only screen and (max-width: 480px) {
+    .header {
+        @include size (375px, 64px);
+        .logo {
+            @include positionLeft(17px, 149px);
+            @include size (78px, 30px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav {
+            display: none;
+        }
+    }
+    .main {
+        @include positionLeft(64px, 0px);
+        @include size (375px, 2600px);
+        #photo {
+            @include positionLeft(24px, 14px);
+            @include size (348px, 396px);
+        }
+        #squaresMob {
+            @include size (79px, 116px);
+            @include positionRight(328px, 16px);
+            display: initial;
+        }
+        #squares {
+            display: none;
+        }
+        #angleT {
+            display: none;
+        }
+        #angleB {
+            display: none;
+        }
+        .bio {
+            @include positionLeft(450px, 14px);
+            @include size (348px, 104px);
+            display: initial;
+            h1 {
+                color: $main-text;
+                @include font(40px, 800, 48px);
+            }
+            &__JaneBio {
+                display: flex;
+                @include positionLeft(84px, 0px);
+                
+                .color {
+                    @include font(14px, 700, 18px);
+                    @include size (94px, 18px);
+                    margin-right: 25px;
+                }
+                .answer {
+                    @include font(14px, 500, 18px);
+
+                }
+            }
+            .about {  
+                h2 {
+                    @include positionLeft(100px, 0px);
+                    @include size (106px, 24px);
+                    display: initial;
+                    @include font(20px, 800, 24px);
+                }
+                p {
+                    @include positionLeft(190px, 0px);
+                    @include size (348px, 286px);
+                    display: initial;
+                    @include font(15px, 400, 28px);
+                    br {
+                        display: initial;
+                    }
+                }
+            }
+        }
+    }
+    .form {
+        @include positionLeft(1100px, 0px);
+        @include size (375px, 1037px);
+        #squares1 {
+            display: none;
+        }
+        #squares2 {
+            display: none;
+        }
+        #squaresMob1 {
+            @include positionRight(0, 0);
+            display: initial;
+        }
+        .info {
+            #btn {
+                @include size(348px, 56px);
+                @include positionLeft(933px, 14px);
+                background: $primary;
+            }
+            .about {
+                @include size(348px, 82px);
+                @include positionLeft(40px, 14px);
+                @include font(32px, 800, 41px);
+                color: $main-text;
+            }
+            .nameNgender {
+                .yourName {
+                    @include size(348px, 75px);
+                    @include positionLeft(162px, 14px);
+                    .name {
+                        @include size(348px, 56px);
+                }
+                }
+                .genderInfo {
+                    @include size(348px, 75px);
+                    @include positionLeft(285px, 14px);
+                    .gender {
+                        @include size(348px, 56px);
+                    }
+                }
+                   
+        }
+            .locationNbirth {
+                .name {
+                    @include size(348px, 56px);
+            }
+                .country {
+                    @include positionLeft(408px, 14px);
+                    
+            }
+                .city {
+                    display: none;
+                }
+                .dateBirth {
+                    @include positionLeft(531px, 14px);
+                }
+        }
+        .upload {
+            @include size (348px, 175px);
+            @include positionLeft(624px, 14px);
+            .proof {
+                @include size (212px, 48px);
+                @include positionLeft(27px, 68px);
+                text-align: center;
+            }
+            .fileBtn {
+                @include size (212px, 56px);
+                @include positionLeft(91px, 68px);
+            }
+        }
+            
+        }
+    }
+    #slider {
+        @include size(346px, 538px);
+        @include positionLeft(2097px, 14px);
+        .dots {
+            @include positionLeft(524px, 140px);
+
+        }
+        .carousel {
+            @include size(346px, 535px);
+            .carousel__item {
+                
+                img {
+                    @include size(346px, 535px);
+                }
+                .slideText {
+                    @include font(40px, 800, 48px);
+                    @include size(254px, 96px);
+                    @include positionLeft(170px, 50px);
+                }
+                p {
+                    @include font(15px, 500, 24px);
+                    @include size(254px, 96px);
+                    @include positionLeft(282px, 45px);
+                 }
+                 
+            }
+            .carousel__actions {
+                .left {
+                    @include positionLeft(190px, 0px);
+                }
+                .right {
+                    @include positionLeft(190px, 292px);
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
